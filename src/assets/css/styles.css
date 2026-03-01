@@ -1577,13 +1577,6 @@
       }
     }
   }
-  .hover\:text-gray-700 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-gray-700);
-      }
-    }
-  }
   .hover\:text-gray-900 {
     &:hover {
       @media (hover: hover) {
@@ -2565,24 +2558,6 @@
       &:hover {
         @media (hover: hover) {
           background-color: var(--color-neutral-800);
-        }
-      }
-    }
-  }
-  .dark\:hover\:text-gray-300 {
-    &:where(.dark, .dark *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-gray-300);
-        }
-      }
-    }
-  }
-  .dark\:hover\:text-gray-600 {
-    &:where(.dark, .dark *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-gray-600);
         }
       }
     }
