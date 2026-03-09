@@ -1,6 +1,6 @@
 import { Metadata } from "next";
-import { PageHero } from "@/components/common/PageHero";
 import { WhyHandCoded } from "@/components/web-design/WhyHandCoded";
+import Landing from "@/components/common/Landing";
 
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function WebDesignPage() {
     return (
         <>
-        <PageHero 
+        <Landing 
             title="Small Business Website Design"
             description="Custom, hand-coded websites designed to drive revenue for small businesses. No templates. No page builders. See our process and book a free consultation."
         />

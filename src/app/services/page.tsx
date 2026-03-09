@@ -1,4 +1,4 @@
-import { PageHero } from "@/components/common/PageHero";
+import Landing from "@/components/common/Landing";
 import { ServiceNav } from "@/components/services/ServiceNav";
 import { WebDevPricing } from "@/components/services/WebDevPricing";
 import { Ecommerce } from "@/components/services/Ecommerce";
@@ -14,9 +14,11 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <PageHero 
-        title="Comprehensive Digital Solutions"
-        description="From hand-coded websites to intelligent automation, we provide everything you need to grow your business online."
+      <Landing
+        tag="Our Services"
+        title="Our Services"
+        description="Explore our range of services designed to help your business thrive in the digital age. Whether you need a stunning website, an e-commerce platform, or AI-powered automation, we have you covered."
+        centered={false}
       />
       
       <ServiceNav />

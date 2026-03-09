@@ -1,7 +1,7 @@
-import { PageHero } from "@/components/common/PageHero";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { ContactInfo } from "@/components/contact/ContactInfo";
 import { Section } from "@/components/common/Section";
+import Landing from "@/components/common/Landing";
 
 export const metadata = {
   title: "Contact | Start Your Project with Sethify",
@@ -11,7 +11,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <PageHero 
+      <Landing 
         title="Let's Build Something Amazing"
         description="Whether you need a new website or want to automate your workflow, we're ready to help. Reach out directly."
         centered={true}

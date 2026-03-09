@@ -1,8 +1,8 @@
-import { PageHero } from "@/components/common/PageHero";
 import { FounderStory } from "@/components/about/FounderStory";
 import { Values } from "@/components/about/Values";
 import { TechStack } from "@/components/about/TechStack";
 import { FinalCTA } from "@/components/home/FinalCTA";
+import Landing from "@/components/common/Landing";
 
 export const metadata = {
   title: "About Sethify | Built by a Developer Who Cares",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <PageHero 
+      <Landing 
         title="Built by a Developer Who Actually Cares"
         description="We believe in quality over quantity, transparency, and building long-term partnerships."
       />

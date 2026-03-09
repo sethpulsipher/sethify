@@ -1,6 +1,6 @@
-import { PageHero } from "@/components/common/PageHero";
 import { ProjectList } from "@/components/projects/ProjectList";
 import { FinalCTA } from "@/components/home/FinalCTA";
+import Landing from "@/components/common/Landing";
 
 export const metadata = {
   title: "Projects | Sethify Web Design",
@@ -10,7 +10,7 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <PageHero 
+      <Landing 
         title="Our Work"
         description="A selection of recent projects showcasing our commitment to performance, design, and tangible results."
       />
