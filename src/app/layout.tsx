@@ -2,18 +2,6 @@ import type { Metadata } from "next";
 import { DM_Serif_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-// const outfit = Outfit({
-//   variable: "--font-heading",
-//   subsets: ["latin"],
-//   display: "swap",
-// });
-
-// const nunito = Nunito_Sans({
-//   variable: "--font-body",
-//   subsets: ["latin"],
-//   display: "swap",
-// });
-
 const dmSerif = DM_Serif_Display({
   subsets: ['latin'],
   weight: '400',
@@ -59,7 +47,7 @@ export default function RootLayout({
           <main className="flex-1 w-full">
             {children}
           </main>
-          <Footer2 />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

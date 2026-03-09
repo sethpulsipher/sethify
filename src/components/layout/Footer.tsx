@@ -6,15 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="w-full relative z-10 bg-cream-dark dark:bg-ink-light border-t border-border pt-16 pb-8 md:pt-24 md:pb-12 text-foreground">
+    <footer className="w-full relative z-10 bg-cream-dark dark:bg-ink border-t border-border pt-16 pb-8 md:pt-24 md:pb-12 text-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 gap-12 mb-16 md:grid-cols-2 lg:grid-cols-5 lg:gap-8">
           
           {/* Brand Column */}
-          <div className="space-y-6 md:col-span-2 lg:col-span-1">
+          <div className="space-y-6 md:col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <div className="relative w-32 h-10">
                 <img 
@@ -30,7 +28,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-sm">
-              We believe small businesses deserve better. Hand-coded websites and intelligent automation that drive real growth.
+              Faster sites. Smarter systems. We design revenue-driven websites and build AI-powered systems for growing businesses.
             </p>
             <div className="flex gap-4">
               <Button variant="ghost" size="icon" className="h-10 w-10 text-muted-foreground hover:text-coral hover:bg-coral/10 rounded-full transition-colors">
@@ -114,7 +112,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© {currentYear} Sethify, LLC. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Sethify, LLC. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-coral transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-coral transition-colors">Terms of Service</Link>

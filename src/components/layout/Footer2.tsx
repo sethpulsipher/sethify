@@ -10,7 +10,7 @@ export default function Footer2() {
 
       <div className="section-container relative">
         {/* Main Footer Content */}
-        <div className="py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+        <div className="py-20 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-5">
             <Link href="/" className="flex items-center mb-6">
@@ -24,7 +24,7 @@ export default function Footer2() {
               </div>
             </Link>
             <p className="text-stone-light text-lg leading-relaxed max-w-md mb-8">
-              Faster sites, smarter systems. We offer hand-coded websites and AI-powered systems that help small businesses grow and succeed.
+              Faster sites, smarter systems. We design revenue-driven websites and build AI-powered systems for growing businesses.
             </p>
             <div className="flex gap-4">
               <a
@@ -43,7 +43,7 @@ export default function Footer2() {
           </div>
 
           {/* Links Columns */}
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:col-span-7">
+          <div className="grid grid-cols-2 gap-12 md:grid-cols-3 lg:col-span-7">
             {/* Services */}
             <div>
               <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-coral mb-6">Services</h4>

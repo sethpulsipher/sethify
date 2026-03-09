@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { cn } from "@/lib/utils";
 
 interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
@@ -32,7 +31,7 @@ export function Section({ children, delay = 0, className, viewport = { once: tru
       whileInView="visible"
       viewport={viewport}
       variants={variants}
-      className={cn("py-20 md:py-28 lg:py-32", className)}
+      className={`py-20 md:py-28 lg:py-32 ${className ? className : ""}`}
       {...props as any}
     >
       {children}
