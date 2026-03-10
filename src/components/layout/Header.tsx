@@ -101,14 +101,20 @@ export function Header() {
           {/* <ModeToggle /> */}
           <Sheet>
             <SheetTrigger asChild>
-              <Button
+              {/* <Button
                 variant="ghost"
                 size="icon"
                 className="text-ink dark:text-cream"
               >
                 <Menu className="size-6" />
                 <span className="sr-only">Toggle menu</span>
-              </Button>
+              </Button> */}
+
+              
+              <button className="inline-flex items-center justify-center text-ink dark:text-cream hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 size-9">
+                <Menu className="size-6" />
+                <span className="sr-only">Toggle menu</span>
+              </button>
             </SheetTrigger>
             <SheetContent
               side="right"
