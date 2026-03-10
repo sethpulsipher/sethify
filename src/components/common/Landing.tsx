@@ -31,7 +31,7 @@ export default function Landing({
           {tag && (
 						<>
 							<span className="label-tag">{tag}</span>
-							<div className="line-accent mt-4 mb-6" />
+							<div className="line-accent animate-line-grow mt-4 mb-6" />
 						</>
 					)}
 
