@@ -16,14 +16,6 @@
   --color-stone: #64748B;
   --color-stone-light: #94A3B8;
 
-  /* Legacy colors for compatibility */
-  --color-bridge-blue: #FF6B4A;
-  --color-slate: #0F172A;
-  --color-cloud: #FDF8F3;
-  --color-steel: #64748B;
-  --color-ocean: #FF6B4A;
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
 
   /* Custom font families - loaded via next/font */
   --font-display: var(--font-dm-serif), Georgia, serif;
@@ -37,20 +29,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
-  /* Brand Colors */
-  --color-coral: var(--coral);
-  --color-coral-dark: var(--coral-dark);
-  --color-ink: var(--ink);
-  --color-ink-light: var(--ink-light);
-  --color-cream: var(--cream);
-  --color-cream-dark: var(--cream-dark);
-  --color-stone: var(--stone);
-  --color-stone-light: var(--stone-light);
-  --color-royal-gold: var(--royal-gold);
-  --color-burgundy: var(--burgundy);
-  --color-yale-blue: var(--yale-blue);
-  --color-cod-black: var(--cod-black);
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
