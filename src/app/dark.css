@@ -1,0 +1,45 @@
+.dark {
+  /* Dark Theme Mapping (Ink Dominant) */
+  --background: var(--ink);
+  --foreground: var(--cream);
+
+  --card: var(--ink-light);
+  --card-foreground: var(--cream);
+
+  --popover: var(--ink-light);
+  --popover-foreground: var(--cream);
+
+  --primary: var(--coral);
+  --primary-foreground: #FFFFFF;
+
+  --secondary: var(--ink-light);
+  --secondary-foreground: var(--cream);
+
+  --muted: var(--ink-light);
+  --muted-foreground: var(--stone-light);
+
+  --accent: var(--ink-lighter);
+  --accent-foreground: var(--cream);
+
+  --destructive: var(--error);
+  --destructive-foreground: #FFFFFF;
+
+  --border: var(--ink-lighter);
+  --input: var(--ink-lighter);
+  --ring: var(--coral);
+
+  --chart-1: var(--coral);
+  --chart-2: var(--cream);
+  --chart-3: var(--stone-light);
+  --chart-4: var(--stone);
+  --chart-5: var(--royal-gold);
+
+  --sidebar: var(--ink);
+  --sidebar-foreground: var(--cream);
+  --sidebar-primary: var(--coral);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: var(--ink-light);
+  --sidebar-accent-foreground: var(--cream);
+  --sidebar-border: var(--ink-lighter);
+  --sidebar-ring: var(--coral);
+}
