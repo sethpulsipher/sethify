@@ -3,11 +3,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Zap, TrendingUp } from "lucide-react";
+import Flasher from "@/components/home/flasher";
 
 export function Hero() {
 
   return (
-    <section className="min-h-screen relative w-full overflow-hidden bg-background pt-24 pb-12 lg:pt-32 lg:pb-24">
+    <section className="relative w-full overflow-hidden bg-background pt-32 pb-20 md:pt-40 lg:pt-32 lg:pb-24">
       {/* Geometric decorations */}
       <div className="absolute top-32 right-12 w-64 h-64 border border-coral/20 rounded-full hidden lg:block" />
       <div className="absolute top-48 right-28 w-32 h-32 border border-coral/10 rounded-full hidden lg:block" />
@@ -18,7 +19,7 @@ export function Hero() {
       <div className="absolute inset-0 z-10 pointer-events-none">
 
         {/* <ColorBends
-          colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+          colors={["#0F172A", "#0F172A", "#0F172A"]}
           rotation={0}
           speed={0.2}
           scale={1}
@@ -29,16 +30,15 @@ export function Hero() {
           noise={0.1}
           transparent
           autoRotate={0}
-          // color="#e77913"
         /> */}
 
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-coral/5 via-transparent to-transparent opacity-50 dark:opacity-20" />
-        <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-royal-gold/10 rounded-full blur-[100px] opacity-30 mix-blend-multiply dark:mix-blend-screen animate-pulse" />
-        <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-coral/5 rounded-full blur-[80px] opacity-30" />
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left, var(--tw-gradient-stops))] from-coral/5 via-transparent to-transparent opacity-50 dark:opacity-20" />
+        <div className="absolute top-1/4 right-0 w-125 h-125 bg-royal-gold/10 rounded-full blur-[100px] opacity-30 mix-blend-multiply dark:mix-blend-screen animate-pulse" />
+        <div className="absolute bottom-0 left-1/4 w-100 h-100 bg-coral/5 rounded-full blur-[80px] opacity-30" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="section-container px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-12 items-center lg:grid-cols-2 lg:gap-20">
           
           {/* Left Column: Copy */}
           <div className="max-w-2xl relative z-10">
@@ -47,19 +47,15 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              <div className="flex lg:inline-flex justify-center items-center gap-2 px-3 py-1 rounded-full bg-coral/10 text-coral text-sm font-semibold mb-6 border border-coral/20">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-coral opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-coral"></span>
-                </span>
-                Accepting New Projects for March
-              </div>
+              <Flasher message="Accepting New Projects for March"/>
+              {/* <span className="label-tag animate-fade-up">web development studio</span>
+              <div className="line-accent mt-4 mb-8 animate-line-grow" /> */}
 
-              <h1 className="text-center lg:text-left text-4xl sm:text-5xl lg:text-[72px] tracking-tight text-ink dark:text-cream leading-[1.15] mb-6">
+              <h1 className=" tracking-tight text-ink dark:text-cream leading-[1.15] mb-6">
                 Web Design & AI Automation for Small Businesses
               </h1>
               
-              <p className="text-center lg:text-left mx-auto lg:mx-0 text-lg text-stone dark:text-stone-light mb-8 leading-relaxed max-w-lg">
+              <p className="mx-auto lg:mx-0 text-lg text-stone dark:text-stone-light mb-8 leading-relaxed max-w-lg">
                 We design revenue-driven websites and build AI-powered systems so your business captures more leads, answers every call, and runs without the busywork.
               </p>
 
@@ -144,7 +140,7 @@ export function Hero() {
                           transition={{ duration: 1, delay: 0.5 + (i * 0.05), ease: "easeOut" }}
                           className="w-full bg-coral/10 dark:bg-coral/20 rounded-t-lg relative group"
                         >
-                          <div className={`absolute bottom-0 left-0 right-0 top-0 bg-coral opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-t from-coral to-coral-light rounded-t-lg`} style={{ height: '100%' }} />
+                          <div className={`absolute bottom-0 left-0 right-0 top-0 bg-coral opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-linear-to-t from-coral to-coral-light rounded-t-lg`} style={{ height: '100%' }} />
                         </motion.div>
                       ))}
                     </div>
@@ -152,11 +148,11 @@ export function Hero() {
                 </div>
 
                 {/* Floating Elements (Toasts) */}
-                 <motion.div
+                <motion.div
                   initial={{ opacity: 0, x: 20, y: 20 }}
                   animate={{ opacity: 1, x: 0, y: 0 }}
                   transition={{ duration: 0.6, delay: 1.2, ease: "backOut" }}
-                  className="absolute z-40 bottom-8 -right-8 bg-white dark:bg-ink-lighter p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-stone-100 dark:border-stone-700 max-w-[240px] z-20"
+                  className="absolute z-40 bottom-8 -right-8 bg-white dark:bg-ink-lighter p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-stone-100 dark:border-stone-700 max-w-60"
                 >
                   <div className="flex gap-3">
                     <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0">
@@ -173,12 +169,12 @@ export function Hero() {
                   initial={{ opacity: 0, x: -20, y: -40 }}
                   animate={{ opacity: 1, x: 0, y: 0 }}
                   transition={{ duration: 0.6, delay: 1.8, ease: "backOut" }}
-                  className=" absolute z-40 top-24 -left-12 bg-white dark:bg-ink-lighter p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-stone-100 dark:border-stone-700 max-w-[220px] z-20 hidden xl:block"
+                  className=" absolute z-40 top-24 -left-12 bg-white dark:bg-ink-lighter p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-stone-100 dark:border-stone-700 max-w-55 hidden xl:block"
                 >
                   <div className="flex gap-3 items-center">
                     <div className="relative">
                       <div className="w-10 h-10 rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
-                         <div className="w-full h-full bg-gradient-to-br from-indigo-400 to-purple-400" />
+                          <div className="w-full h-full bg-linear-to-br from-indigo-400 to-purple-400" />
                       </div>
                       <span className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-green-500 border-2 border-white dark:border-ink-lighter" />
                     </div>
@@ -192,7 +188,7 @@ export function Hero() {
               </div>
               
               {/* Decorative Blur behind card */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-coral/20 to-purple-500/20 rounded-[32px] blur-2xl -z-10 opacity-60 dark:opacity-40" />
+              <div className="absolute -inset-4 bg-linear-to-r from-coral/20 to-purple-500/20 rounded-[32px] blur-2xl -z-10 opacity-60 dark:opacity-40" />
             </motion.div>
           </div>
         </div>
