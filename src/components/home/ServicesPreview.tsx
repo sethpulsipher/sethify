@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function ServicesPreview() {
   return (
-    <Section className="bg-cream-dark dark:bg-ink-light py-24">
+    <Section className="bg-white dark:bg-ink-light py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-sm font-semibold uppercase tracking-wide text-coral mb-2 block">
