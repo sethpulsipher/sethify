@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Zap, TrendingUp } from "lucide-react";
-import Flasher from "@/components/home/flasher";
+import Flasher from "@/components/home/Flasher";
 
 export function Hero() {
 
