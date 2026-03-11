@@ -3,39 +3,43 @@
 import { Section } from "@/components/common/Section";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { Check, X, Ban } from "lucide-react";
 
-export function PricingPreview() {
+export function WebDesignPricing() {
   const plans = [
     {
       name: "Monthly",
       price: "$150",
       period: "/month",
-      description: "$0 down. Includes design, development, hosting, and unlimited edits.",
+      description: "$150 upfront. Cancel anytime after 12 months.",
       features: [
         "Custom Design & Development",
         "Hosting Included",
         "Unlimited Edits",
         "24/7 Support",
         "Lifetime Updates",
-        "SEO Optimization",
+        "+$100/page After 5 Pages",
+        "Additional Features Starting at $100"
       ],
       cta: "Get Started",
       featured: true,
-      href: "/contact?plan=standard",
+      href: "/contact?plan=monthly",
     },
     {
       name: "Lump Sum",
       price: "$3,000",
       period: "one-time",
-      description: "One-time payment. Same deliverables. $25/month hosting after launch.",
+      description: "50% upfront, 50% on launch. No hosting included.",
       features: [
         "Custom Design & Development",
-        "Ownership of Code",
-        "3 Revision Rounds",
-        "4-Week Turnaround",
-        "Standard Hosting ($25/mo)",
-        "SEO Optimization",
+        "+$25/month Hosting",
+        "$100/hour for edits after launch",
+        "+$250 To Add A Blog",
+        "+$100/page After 5 Pages",
+      ],
+      discludes: [
+        "24/7 Support",
+        "Lifetime Updates"
       ],
       cta: "Learn More",
       featured: false,
@@ -55,7 +59,7 @@ export function PricingPreview() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-lg md:max-w-4xl mx-auto">
+        <div className="grid gap-8 mx-auto mb-24 max-w-lg md:grid-cols-2 md:max-w-4xl lg:gap-12">
           {plans.map((plan, index) => (
             <div 
               key={index} 
@@ -75,10 +79,12 @@ export function PricingPreview() {
               
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-stone dark:text-stone-light mb-2">{plan.name}</h3>
+
                 <div className="flex items-baseline gap-1">
                   <span className="text-4xl lg:text-5xl font-bold text-ink dark:text-cream">{plan.price}</span>
                   <span className="text-lg text-stone-light">{plan.period}</span>
                 </div>
+                
                 <p className="mt-4 text-stone dark:text-stone-light leading-relaxed">
                   {plan.description}
                 </p>
@@ -89,6 +95,12 @@ export function PricingPreview() {
                   <li key={i} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-coral shrink-0 mt-0.5" />
                     <span className="text-ink dark:text-cream/90 text-sm md:text-base">{feature}</span>
+                  </li>
+                ))}
+                {plan.discludes?.map((exclude, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <Ban className="w-4 h-4 text-stone-light shrink-0 mt-0.5" />
+                    <span className="text-stone dark:text-stone-light text-sm md:text-base">{exclude}</span>
                   </li>
                 ))}
               </ul>
@@ -103,6 +115,31 @@ export function PricingPreview() {
             </div>
           ))}
         </div>
+
+        {/* Comparison Section */}
+         <div className="max-w-4xl mx-auto bg-cream-dark dark:bg-ink-light rounded-2xl p-8 md:p-12">
+           <h3 className="text-2xl font-bold text-ink dark:text-cream mb-8 text-center">Why Hand-Coded Websites Beat WordPress Websites</h3>
+           <div className="grid md:grid-cols-2 gap-8">
+             <div>
+               <h4 className="font-bold text-lg mb-4 text-coral">Hand-coded</h4>
+               <ul className="space-y-3">
+                 <li className="flex gap-2 items-start"><Check className="w-5 h-5 text-coral shrink-0" /> Loads in 1 second or less</li>
+                 <li className="flex gap-2 items-start"><Check className="w-5 h-5 text-coral shrink-0" /> Better SEO performance</li>
+                 <li className="flex gap-2 items-start"><Check className="w-5 h-5 text-coral shrink-0" /> More secure (no plugins)</li>
+                 <li className="flex gap-2 items-start"><Check className="w-5 h-5 text-coral shrink-0" /> Creative freedom (no templates)</li>
+               </ul>
+             </div>
+             <div>
+               <h4 className="font-bold text-lg mb-4 text-stone">WordPress</h4>
+               <ul className="space-y-3 text-stone dark:text-stone-light">
+                 <li className="flex gap-2 items-start"><X className="w-5 h-5 text-stone-light shrink-0" /> Slow loading due to bloat</li>
+                 <li className="flex gap-2 items-start"><X className="w-5 h-5 text-stone-light shrink-0" /> Constant plugin updates needed</li>
+                 <li className="flex gap-2 items-start"><X className="w-5 h-5 text-stone-light shrink-0" /> Vulnerable to security hacks</li>
+                 <li className="flex gap-2 items-start"><X className="w-5 h-5 text-stone-light shrink-0" /> Restricted by template limits</li>
+               </ul>
+             </div>
+           </div>
+         </div>
       </div>
     </Section>
   );

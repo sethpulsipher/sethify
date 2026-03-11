@@ -1,7 +1,5 @@
 import { Hero } from "@/components/home/Hero";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
-import { WhyHandCoded } from "@/components/web-design/WhyHandCoded";
-import { PricingPreview } from "@/components/home/PricingPreview";
 import { SocialProof } from "@/components/home/SocialProof";
 import { FinalCTA } from "@/components/home/FinalCTA";
 
@@ -15,8 +13,6 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Hero />
       <ServicesPreview />
-      <WhyHandCoded />
-      <PricingPreview />
       <SocialProof />
       <FinalCTA />
     </div>
