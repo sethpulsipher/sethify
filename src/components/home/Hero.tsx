@@ -49,7 +49,7 @@ export function Hero() {
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               {/* <Flasher message="Accepting New Projects for March"/> */}
-              <span className="label-tag animate-fade-up">Sethify Studio</span>
+              <span className="label-tag animate-fade-up">Faster sites. Smarter systems.</span>
               <div className="line-accent animate-line-grow" />
 
               <h1 className=" tracking-tight text-ink dark:text-cream leading-[1.15] mb-6">
