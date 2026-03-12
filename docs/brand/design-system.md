@@ -147,11 +147,11 @@ Parent `.stagger-children` auto-staggers direct children at 100ms intervals (up 
 
 ### Buttons
 
-| Variant | Background | Text | Border | Hover | Radius |
-|---|---|---|---|---|---|
-| Primary | `color-primary` | White | None | Slide-up fill with `color-primary-hover` via ::before pseudo | `radius-sm` (2px) |
-| Secondary | Transparent | `color-text-primary` | 2px `color-text-primary` | `bg-secondary text-bg-primary` (full invert) | `radius-sm` (2px) |
-| Ghost | Transparent | `color-primary` | None | Arrow translateX(4px) | None |
+| Variant | Background | Text | Border | Hover | Radius | Class Name |
+|---|---|---|---|---|---|---|
+| Primary | `color-primary` | White | None | Slide-up fill with `color-primary-hover` via ::before pseudo | `radius-sm` (2px) | `btn-primary` |
+| Secondary | Transparent | `color-text-primary` | 2px `color-text-primary` | `bg-secondary text-bg-primary` (full invert) | `radius-sm` (2px) | `btn-secondary` |
+| Ghost | Transparent | `color-primary` | None | Arrow translateX(4px) | None | N/A |
 
 - Padding: 1rem vertical / 1.75rem horizontal (py-4 px-7)
 - Font: `font-button` (DM Sans, 500 weight)
@@ -202,6 +202,8 @@ Parent `.stagger-children` auto-staggers direct children at 100ms intervals (up 
 | `grid-columns` | 12-col CSS Grid |
 | `grid-gap` | `space-6` (24px) default, `space-8` (32px) for card grids |
 | `section-padding-y` | `space-16` mobile (py-16) / `space-24` desktop (md:py-24) |
+
+**USE THE CLASS `section-container` FOR THE SECTIONS CONTAINER**
 
 ### Layout Patterns
 

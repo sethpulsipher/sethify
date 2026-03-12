@@ -34,6 +34,7 @@ Full context: `project-brief.md`
 |---|---|
 | `sitemap.md` | Page hierarchy, navigation structure, page goals |
 | `copy.md` | All written content — headlines, body, CTAs, organized by page |
+| `keyword-research.md` | A super in depth research of keywords to target. |
 | `media-requirements.md` | Image specs, video needs, asset list |
 
 ### `/technical`
