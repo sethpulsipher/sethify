@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import { WhyHandCoded } from "@/components/web-design/WhyHandCoded";
 import Landing from "@/components/common/Landing";
-import { WebDesignPricing as Pricing} from "@/components/web-design/WebDesignPricing";
-import { WebDevPricing } from "@/components/services/WebDevPricing";
-
-
+import { WebDesignPricing as Pricing } from "@/components/web-design/WebDesignPricing";
+import { WhoWeBuildFor } from "@/components/web-design/WhoWeBuildFor";
+import { WebDesignProcess } from "@/components/web-design/WebDesignProcess";
+import { FinalCTA } from "@/components/common/CTA";
 
 export const metadata: Metadata = {
     title: "Small Business Website Design Services | Sethify",
@@ -14,13 +14,15 @@ export const metadata: Metadata = {
 export default function WebDesignPage() {
     return (
         <>
-            <Landing 
-                title="Small Business Website Design"
-                description="Custom, hand-coded websites designed to drive revenue for small businesses. No templates. No page builders. See our process and book a free consultation."
+            <Landing
+                title="Small Business Website Design Services"
+                description="Custom website development for small service businesses. Hand-coded, fast, and built to turn visitors into leads. No templates. No page builders."
             />
             <WhyHandCoded />
+            <WhoWeBuildFor />
             <Pricing />
-            <WebDevPricing />
+            <WebDesignProcess />
+            <FinalCTA />
         </>
     );
 }
