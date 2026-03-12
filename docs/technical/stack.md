@@ -4,10 +4,10 @@
 
 | Layer | Choice | Version | Notes |
 |---|---|---|---|
-| SSG / Framework | Astro | Latest | Islands architecture |
-| UI Components | React | Latest | For interactive islands only |
-| CSS | Tailwind CSS | Latest | Notes |
-| Language | TypeScript | Latest | Notes |
+| SSG / Framework | Next.js | Latest stable version | Islands architecture |
+| UI Components | React | Latest stable version | For interactive islands only |
+| CSS | Tailwind CSS | Latest stable version | Notes |
+| Language | TypeScript | Latest stable version | Notes |
 
 ## Key Packages
 
@@ -20,11 +20,11 @@
 
 | Setting | Value |
 |---|---|
-| Host | Netlify |
+| Host | Vercel |
 | Repo | [REPO_URL] |
 | Branch → Production | `master` |
 | Branch → Preview | `dev` |
-| Build command | `npm run build` |
+| Build command | `pnpm run build` |
 | Output dir | `dist` |
 | Node version | Latest |
 | Environment variables | N/A |
@@ -34,8 +34,7 @@
 | Path | Purpose |
 |---|---|
 | `src/components/` | Shared components |
-| `src/layouts/` | Page layouts |
-| `src/pages/` | Route pages |
+| `src/app/` | Next.js app router |
 | `src/styles/` | Global styles, tokens |
 | `public/` | Static assets |
 | `docs/` | This documentation |
