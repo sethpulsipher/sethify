@@ -7,7 +7,7 @@ export default function Dashboard() {
     return (
         <>
         {/* Main Card */}
-        <div className="relative bg-white dark:bg-ink-light rounded-2xl shadow-2xl border border-stone-100 dark:border-stone-800/50 overflow-hidden transform hover:scale-[1.02] transition-transform duration-500">
+        <div className="relative bg-white dark:bg-ink-light rounded-2xl shadow-2xl border border-stone-100 dark:border-stone-800/50  transform hover:scale-[1.02] transition-transform duration-500">
             {/* Header */}
             <div className="h-12 border-b border-stone-100 dark:border-stone-800 flex items-center px-4 gap-2 bg-stone-50/50 dark:bg-ink/50">
                 <div className="flex gap-1.5">
