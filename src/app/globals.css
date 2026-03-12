@@ -286,16 +286,16 @@
     box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
     transform: translateY(-2px);
   }
-
-  /* Decorative line element */
-  .line-accent {
-    @apply w-12 h-0.5 bg-coral;
-  }
-
   /* Editorial label style */
   .label-tag {
     @apply inline-block text-xs font-semibold uppercase tracking-[0.2em] text-coral;
   }
+
+  /* Decorative line element */
+  .line-accent {
+    @apply w-12 h-0.5 bg-coral mt-4 mb-6;
+  }
+
 
   /* Number display for stats */
   .stat-number {
