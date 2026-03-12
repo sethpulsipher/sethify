@@ -115,10 +115,7 @@ export function Header() {
                 onMouseLeave={handleMouseLeave}
               >
                 <button
-                  className={`font-medium transition-colors hover:text-coral relative group inline-flex items-center gap-1 cursor-pointer ${
-                    isServicePage
-                      ? "text-coral"
-                      : "text-ink dark:text-cream/90"
+                  className={`font-medium transition-colors hover:text-coral relative group inline-flex items-center gap-1 cursor-pointer text-ink dark:text-cream/90"
                   }`}
                 >
                   {link.name}
