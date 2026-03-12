@@ -47,7 +47,7 @@ export default function RootLayout({
           <main className="flex-1 w-full">
             {children}
           </main>
-          <Footer />
+          <Footer2 />
         </ThemeProvider>
       </body>
     </html>

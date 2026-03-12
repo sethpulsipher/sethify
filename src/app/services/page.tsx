@@ -4,7 +4,7 @@ import { WebDevPricing } from "@/components/services/WebDevPricing";
 import { Ecommerce } from "@/components/services/Ecommerce";
 import { AIAutomation } from "@/components/services/AIAutomation";
 import { Process } from "@/components/services/Process";
-import { FinalCTA } from "@/components/home/FinalCTA";
+import { FinalCTA } from "@/components/common/CTA";
 
 export const metadata = {
   title: "Services | Sethify Web Design & AI Automation",

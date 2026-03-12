@@ -1,5 +1,5 @@
 import { ProjectList } from "@/components/projects/ProjectList";
-import { FinalCTA } from "@/components/home/FinalCTA";
+import { FinalCTA } from "@/components/common/CTA";
 import Landing from "@/components/common/Landing";
 
 export const metadata = {

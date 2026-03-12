@@ -1,7 +1,7 @@
 import { FounderStory } from "@/components/about/FounderStory";
 import { Values } from "@/components/about/Values";
 import { TechStack } from "@/components/about/TechStack";
-import { FinalCTA } from "@/components/home/FinalCTA";
+import { FinalCTA } from "@/components/common/CTA";
 import Landing from "@/components/common/Landing";
 
 export const metadata = {
@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Landing 
-        title="Built by a Developer Who Actually Cares"
+        title="Your Web Design & Development Partner"
         description="We believe in quality over quantity, transparency, and building long-term partnerships."
       />
       <FounderStory />

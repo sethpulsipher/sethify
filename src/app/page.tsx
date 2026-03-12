@@ -1,7 +1,10 @@
 import { Hero } from "@/components/home/Hero";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
+import { WhoWeWorkWith } from "@/components/home/WhoWeWorkWith";
 import { SocialProof } from "@/components/home/SocialProof";
-import { FinalCTA } from "@/components/home/FinalCTA";
+import Testimonials from "@/components/home/Testimonials";
+import Results from "@/components/home/Results";
+import { FinalCTA } from "@/components/common/CTA";
 
 export const metadata = {
   title: "Web Design & AI Automation for Small Business | Sethify",
@@ -10,11 +13,13 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <Hero />
       <ServicesPreview />
-      <SocialProof />
+      <WhoWeWorkWith className="bg-cream-dark" />
+      <Results />
+      <Testimonials />
       <FinalCTA />
-    </div>
+    </>
   );
 }

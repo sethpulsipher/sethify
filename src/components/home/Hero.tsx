@@ -9,7 +9,7 @@ import Dashboard from "@/components/Dashboard";
 export function Hero() {
 
   return (
-    <section className="relative w-full overflow-hidden bg-background pt-32 pb-20 md:pt-40 lg:pt-32 lg:pb-24">
+    <section className="relative w-full overflow-hidden bg-background pt-32 pb-20 md:pt-40 lg:pt-32">
       {/* Geometric decorations */}
       <div className="absolute top-32 right-12 w-64 h-64 border border-coral/20 rounded-full hidden lg:block" />
       <div className="absolute top-48 right-28 w-32 h-32 border border-coral/10 rounded-full hidden lg:block" />
@@ -39,40 +39,36 @@ export function Hero() {
       </div>
 
       <div className="section-container px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-12 items-center lg:grid-cols-2 lg:gap-20">
+        <div className="grid gap-8 items-center lg:grid-cols-12 lg:gap-4">
           
           {/* Left Column: Copy */}
-          <div className="max-w-2xl relative z-10">
+          <div className="lg:col-span-7">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              <Flasher message="Accepting New Projects for March"/>
-              {/* <span className="label-tag animate-fade-up">web development studio</span>
-              <div className="line-accent mt-4 mb-8 animate-line-grow" /> */}
+              {/* <Flasher message="Accepting New Projects for March"/> */}
+              <span className="label-tag animate-fade-up">Sethify Studio</span>
+              <div className="line-accent animate-line-grow" />
 
               <h1 className=" tracking-tight text-ink dark:text-cream leading-[1.15] mb-6">
-                Web Design & AI Automation for Small Businesses
+                Web Design & AI Automation for Small Service Businesses
               </h1>
               
-              <p className="mx-auto lg:mx-0 text-lg text-stone dark:text-stone-light mb-8 leading-relaxed max-w-lg">
+              <p className="lg:mx-0 text-lg text-stone dark:text-stone-light mb-8 leading-relaxed max-w-lg">
                 We design revenue-driven websites and build AI-powered systems so your business captures more leads, answers every call, and runs without the busywork.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <Link href="/contact" className="btn-primary">
-                  <span className="flex items-center gap-2">Get Started <ArrowRight className="w-5 h-5" /></span>
-                </Link>
-                <Link href="/services" className="btn-secondary">
-                  See Our Services
-                </Link>
+                <Link href="/contact" className="btn-primary">Get a Free Quote</Link>
+                <Link href="/services" className="btn-secondary gap-2">See How It Works</Link>
               </div>
             </motion.div>
           </div>
 
           {/* Right Column: Visual Dashboard */}
-          <div className="relative z-10 hidden lg:block perspective-1000">
+          <div className="relative mb-12 lg:col-span-5 lg:border-l border-ink/10 lg:pl-8">
             <motion.div
               initial={{ opacity: 0, rotateY: -5, x: 20 }}
               animate={{ opacity: 1, rotateY: 0, x: 0 }}
