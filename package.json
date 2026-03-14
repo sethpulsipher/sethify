@@ -2,12 +2,12 @@
   "name": "sethify",
   "version": "0.1.0",
   "private": true,
-  "postbuild": "next-sitemap",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@react-three/fiber": "^9.5.0",
