@@ -22,9 +22,9 @@ export const metadata: Metadata = {
 };
 
 import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import Footer2 from "@/components/layout/Footer";
+import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function RootLayout({
   children,
@@ -47,8 +47,9 @@ export default function RootLayout({
           <main className="flex-1 w-full">
             {children}
           </main>
-          <Footer2 />
+          <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
