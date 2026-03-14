@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Zap, TrendingUp } from "lucide-react";
-import Flasher from "@/components/home/Flasher";
 import Dashboard from "@/components/Dashboard";
 
 export function Hero() {

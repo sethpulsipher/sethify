@@ -129,7 +129,7 @@ export function Header() {
 
                 {servicesOpen && (
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3">
-                    <div className="bg-background/95 backdrop-blur-md border border-border/50 rounded-sm shadow-lg py-2 min-w-[180px]">
+                    <div className="bg-background/95 backdrop-blur-md border border-border/50 rounded-sm shadow-lg py-2 min-w-45">
                       {link.children.map((child) => (
                         <Link
                           key={child.name}
@@ -188,7 +188,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[300px] sm:w-[400px] bg-background/95 backdrop-blur-xl border-l border-border/50 p-6 flex flex-col justify-between"
+              className="w-75 sm:w-100 bg-background/95 backdrop-blur-xl border-l border-border/50 p-6 flex flex-col justify-between"
             >
               <div className="space-y-8 mt-12">
                 <div className="flex flex-col space-y-4">

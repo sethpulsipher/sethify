@@ -18,7 +18,7 @@ export function FinalCTA({
   return (
     <section className="py-24 bg-ink text-white relative overflow-hidden">
 {/* Decorative elements */}
-          <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-coral/30 to-transparent" />
+          <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-coral/30 to-transparent" />
           <div className="absolute top-1/4 left-12 w-32 h-32 border border-coral/10 rounded-full hidden lg:block" />
           <div className="absolute bottom-1/4 right-24 w-48 h-48 border border-coral/10 rounded-full hidden lg:block" />
 

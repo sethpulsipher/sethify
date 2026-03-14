@@ -33,7 +33,7 @@ export function ServiceNav() {
   }, []);
 
   return (
-    <nav className="sticky top-[73px] md:top-[89px] z-30 bg-background/80 backdrop-blur-md border-b border-border py-4 overflow-x-auto">
+    <nav className="sticky top-22.25 z-30 bg-background/80 backdrop-blur-md border-b border-border py-4 overflow-x-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center gap-4 sm:gap-8 min-w-max">
         {sections.map((section) => (
           <Link
