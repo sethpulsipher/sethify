@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export function ServicesPreview() {
   return (
     <Section className="bg-white dark:bg-ink-light py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-custom mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Copy */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -19,7 +19,7 @@ export function ServicesPreview() {
             Custom Websites and AI <br /> Systems for Every Stage of Growth
           </h2>
           <p className="text-lg text-stone dark:text-stone-light leading-relaxed">
-            We provide hand-coded website design and development, AI automation solutions, and integration services that help small businesses capture more leads, book more appointments, and run without the busywork. Whether you need a new site or want to automate your operations, we have a solution that fits your needs and budget.
+            We provide hand-coded website design and development, AI automation solutions, and integration services that help small businesses capture more leads, book more appointments, and run without the busywork.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export function ServicesPreview() {
               </div>
               
               <h3 className="text-2xl font-bold mb-4 text-ink dark:text-cream">Custom Business Websites</h3>
-              <p className="text-stone dark:text-stone-light text-lg mb-8 leading-relaxed flex-grow">
+              <p className="text-stone dark:text-stone-light text-lg mb-8 leading-relaxed grow">
                 Professional websites that convert. Clean code, fast performance, designed to grow with your business. Straightforward pricing, clear deliverables, no surprises.
               </p>
               

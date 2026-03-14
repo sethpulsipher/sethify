@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Results() {
   return (
     <section className="py-24 md:py-32 bg-white">
-      <div className="section-container">
+      <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Content */}
           <div>

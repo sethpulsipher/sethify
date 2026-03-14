@@ -38,7 +38,7 @@ export function Hero() {
         <div className="absolute bottom-0 left-1/4 w-100 h-100 bg-coral/5 rounded-full blur-[80px] opacity-30" />
       </div>
 
-      <div className="section-container px-4 sm:px-6 lg:px-8">
+      <div className="container-custom px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 items-center lg:grid-cols-12 lg:gap-4">
           
           {/* Left Column: Copy */}

@@ -7,7 +7,7 @@ export default function Testimonials() {
     <section className="py-24 md:py-32 bg-cream-dark relative overflow-hidden">
       <div className="absolute top-1/2 right-0 w-96 h-96 bg-coral/5 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
 
-      <div className="section-container relative">
+      <div className="container-custom relative">
         <div className="max-w-3xl mb-16">
           <span className="label-tag">Testimonials</span>
           <div className="line-accent mt-4 mb-6" />
@@ -26,7 +26,7 @@ export default function Testimonials() {
             },
             {
               quote:
-                "Other developers disappeared after launch. Bridge actually sticks around. When we had an issue at 7am, they fixed it by 9am. That's the partnership we needed.",
+                "Other developers disappeared after launch. Sethify actually sticks around. When we had an issue at 7am, they fixed it by 9am. That's the partnership we needed.",
               name: "Sarah L.",
               role: "Law Firm Partner",
             },

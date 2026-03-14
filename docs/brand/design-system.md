@@ -203,7 +203,7 @@ Parent `.stagger-children` auto-staggers direct children at 100ms intervals (up 
 | `grid-gap` | `space-6` (24px) default, `space-8` (32px) for card grids |
 | `section-padding-y` | `space-16` mobile (py-16) / `space-24` desktop (md:py-24) |
 
-**USE THE CLASS `section-container` FOR THE SECTIONS CONTAINER**
+**USE THE CLASS `container-custom` FOR THE SECTIONS CONTAINER**
 
 ### Layout Patterns
 

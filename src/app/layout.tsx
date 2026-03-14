@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import Footer2 from "@/components/layout/Footer2";
+import Footer2 from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export default function RootLayout({
