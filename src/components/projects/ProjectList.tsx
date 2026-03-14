@@ -42,7 +42,7 @@ export function ProjectList() {
               {/* Image Placeholder */}
               <div className={`aspect-[4/3] w-full ${project.image} relative overflow-hidden`}>
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                  <Link href={project.href} className="flex items-center gap-2 bg-white text-ink font-semibold px-6 py-3 rounded-full hover:bg-cream transition-colors transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <Link href="#" className="flex items-center gap-2 bg-white text-ink font-semibold px-6 py-3 rounded-full hover:bg-cream transition-colors transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     View Project <ExternalLink className="w-4 h-4" />
                   </Link>
                 </div>
