@@ -5,15 +5,16 @@ import { FinalCTA } from "@/components/common/CTA";
 import Landing from "@/components/common/Landing";
 
 export const metadata = {
-  title: "About Sethify | Built by a Developer Who Cares",
-  description: "Learn about the philosophy behind Sethify and how we help small businesses succeed with custom web development and AI automation.",
+  title: "About Sethify | Web Design & AI Automation Studio for Small Business",
+  description: "Sethify is a web development and AI automation studio built for small service businesses. Founded by a developer. No templates. No page builders. No fluff.",
 };
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Landing 
-        title="Your Web Design & Development Partner"
+        tag="Who We Are"
+        title="A Developer-Led Studio Built for Small Service Businesses"
         description="We believe in quality over quantity, transparency, and building long-term partnerships."
       />
       <FounderStory />
