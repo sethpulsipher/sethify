@@ -59,7 +59,9 @@ export function Hero() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <Link href="/contact" className="btn-primary">Get a Free Quote</Link>
+                <Link href="/contact" className="btn-primary">
+                  <span>Get a Free Quote</span>
+                </Link>
                 <Link href="/services" className="btn-secondary gap-2">See How It Works</Link>
               </div>
             </motion.div>
