@@ -2,7 +2,35 @@
   "permissions": {
     "allow": [
       "Bash(rm -rf .next)",
-      "Bash(pnpm build:*)"
+      "Bash(npx tsc:*)",
+      "WebSearch(*)",
+      "WebFetch(*)",
+      "Bash(source:*)",
+      "Bash(export:*)",
+      "Bash(curl:*)",
+      "Bash(jq:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(echo:*)",
+      "Bash(which:*)",
+      "Bash(wc:*)",
+      "Bash(file:*)",
+      "Bash(pwd:*)",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(find:*)",
+      "Bash(sort:*)",
+      "Bash(tree:*)",
+      "Bash(diff:*)",
+      "Bash(node:*)",
+      "Bash(pnpm:*)",
+      "Bash(npx:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
     ]
   }
 }
