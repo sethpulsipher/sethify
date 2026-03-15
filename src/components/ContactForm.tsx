@@ -98,7 +98,7 @@ export default function ContactForm() {
             value={formData.phone}
             onChange={handleChange}
             className="w-full"
-            placeholder="(555) 123-4567"
+            placeholder="(385) 993-5483"
           />
         </div>
       </div>

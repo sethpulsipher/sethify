@@ -77,7 +77,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="font-semibold text-ink dark:text-cream">Call Us</p>
-                        <a href="tel:+15551234567" className="text-stone dark:text-stone-light hover:text-coral transition-colors">+1 (555) 123-4567</a>
+                        <a href="tel:+13859935483" className="text-stone dark:text-stone-light hover:text-coral transition-colors">+1 (385) 993-5483</a>
                       </div>
                     </li>
 
@@ -98,8 +98,8 @@ export default function ContactPage() {
                   <p className="text-stone mb-4">
                     We&apos;re available Monday-Friday, 8am-6pm MT
                   </p>
-                  <a href="tel:+15555551234" className="text-coral text-xl font-medium hover:text-coral-dark transition-colors">
-                    (555) 555-1234
+                  <a href="tel:+13859935483" className="text-coral text-xl font-medium hover:text-coral-dark transition-colors">
+                    (385) 993-5483
                   </a>
                 </div>
 
