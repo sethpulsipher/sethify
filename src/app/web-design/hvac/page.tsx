@@ -30,7 +30,7 @@ export default function HVACWebDesignPage() {
           href: "/ai-systems/hvac",
         }}
         image={{
-          src: "/images/industries/hvac.jpg",
+          src: "/images/industries/hvac.webp",
           alt: "HVAC technician servicing an air conditioning unit",
         }}
         faqs={[

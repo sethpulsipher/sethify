@@ -30,7 +30,7 @@ export default function DentalWebDesignPage() {
           href: "/ai-systems/dental",
         }}
         image={{
-          src: "/images/industries/dental.jpg",
+          src: "/images/industries/dental.webp",
           alt: "Modern dental practice reception area",
         }}
         faqs={[

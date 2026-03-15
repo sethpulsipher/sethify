@@ -31,7 +31,7 @@ export default function LegalWebDesignPage() {
           href: "/ai-systems/legal",
         }}
         image={{
-          src: "/images/industries/legal.jpg",
+          src: "/images/industries/legal.webp",
           alt: "Professional law firm office environment",
         }}
         faqs={[
