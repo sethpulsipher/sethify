@@ -29,7 +29,7 @@ export default function PlumbingAISystemsPage() {
           href: "/web-design/plumbing",
         }}
         image={{
-          src: "/images/industries/plumbing-ai.jpg",
+          src: "/images/industries/plumbing-ai.webp",
           alt: "Plumber on the job receiving automated booking notifications",
         }}
         faqs={[

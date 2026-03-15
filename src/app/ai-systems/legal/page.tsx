@@ -29,7 +29,7 @@ export default function LegalAISystemsPage() {
           href: "/web-design/legal",
         }}
         image={{
-          src: "/images/industries/legal-ai.jpg",
+          src: "/images/industries/legal-ai.webp",
           alt: "Law firm office with AI-powered client intake system",
         }}
         faqs={[

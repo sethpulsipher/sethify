@@ -29,7 +29,7 @@ export default function HVACAISystemsPage() {
           href: "/web-design/hvac",
         }}
         image={{
-          src: "/images/industries/hvac-ai.jpg",
+          src: "/images/industries/hvac-ai.webp",
           alt: "HVAC company phone system handling customer calls",
         }}
         faqs={[

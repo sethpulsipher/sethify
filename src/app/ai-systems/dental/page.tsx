@@ -29,7 +29,7 @@ export default function DentalAISystemsPage() {
           href: "/web-design/dental",
         }}
         image={{
-          src: "/images/industries/dental-ai.jpg",
+          src: "/images/industries/dental-ai.webp",
           alt: "Dental office front desk with automated scheduling",
         }}
         faqs={[
