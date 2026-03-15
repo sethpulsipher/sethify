@@ -11,7 +11,7 @@ export const metadata = {
   description: "Comprehensive digital services including custom web design, e-commerce solutions, and AI automation to streamline your business.",
 };
 
-function ServicesPage() {
+export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Landing
